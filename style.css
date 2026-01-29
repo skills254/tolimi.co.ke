@@ -47,7 +47,7 @@ body {
 
 .nav-links a {
   text-decoration: none;
-  color: #0d1f3c;
+  color: #102b4a; /* darker Zoom-style blue */;
   font-weight: 500;
   transition: color 0.3s;
 }
