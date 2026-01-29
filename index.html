@@ -1,108 +1,52 @@
-/* ALTERNATING SECTIONS */
-.section-light {
-  background: #f7f9fc; /* light grey/blue for contrast */
-  color: #1a1a1a;
-}
+<!-- WHAT WE THINK -->
+<section id="whatwethink" class="section section-dark">
+  <div class="container">
+    <h2>What We Think</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Innovation</h3>
+        <img src="https://source.unsplash.com/400x250/?innovation,tech" alt="Innovation" class="card-img">
+        <p>We explore new technologies and climate-smart solutions to optimize production.</p>
+      </div>
+      <div class="card">
+        <h3>Sustainability</h3>
+        <img src="https://source.unsplash.com/400x250/?sustainability,nature" alt="Sustainability" class="card-img">
+        <p>We design business models that balance profitability with environmental and social impact.</p>
+      </div>
+      <div class="card">
+        <h3>Impact</h3>
+        <img src="https://source.unsplash.com/400x250/?community,impact" alt="Impact" class="card-img">
+        <p>Our initiatives improve livelihoods, empower communities, and expand enterprise opportunities.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-/* DARK SECTIONS (already added) */
-.section-dark {
-  background: #0d1f3c; /* navy */
-  color: white;
-}
+<!-- CAREERS -->
+<section id="careers" class="section section-darker">
+  <div class="container">
+    <h2>Careers</h2>
+    <p>Join our mission-driven team to transform agriculture, finance, and enterprise development in Africa.</p>
+    <a href="#contact" class="btn">Apply Now</a>
+  </div>
+</section>
 
-.section-darker {
-  background: #1a2a4f; /* slightly lighter navy */
-  color: white;
-}
+<!-- CONTACT -->
+<section id="contact" class="section section-light">
+  <div class="container">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </div>
+</section>
 
-/* CARDS */
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-
-.card {
-  background: white;
-  padding: 25px;
-  border-radius: 10px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.05);
-  flex: 1 1 250px;
-  max-width: 300px;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-}
-
-/* CARDS IN DARK SECTIONS */
-.section-dark .card,
-.section-darker .card {
-  background: #2a3b6c;
-  color: white;
-}
-
-.section-dark .card h3,
-.section-darker .card h3 {
-  color: #ff8c00; /* accent heading */
-}
-
-.section-dark .card p,
-.section-darker .card p {
-  color: #ffffff;
-}
-
-.card-img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 6px;
-  margin-bottom: 15px;
-}
-
-/* HERO BUTTONS */
-.hero .btn,
-.section-dark .btn,
-.section-darker .btn,
-.section-light .btn {
-  background: #ff8c00;
-  color: white;
-  padding: 12px 30px;
-  border-radius: 6px;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.hero .btn:hover,
-.section-dark .btn:hover,
-.section-darker .btn:hover,
-.section-light .btn:hover {
-  background: #ffa733;
-}
-
-/* CONTACT FORM */
-form input, form textarea {
-  display: block;
-  width: 100%;
-  padding: 15px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-}
-
-form button {
-  background: #1a73e8;
-  color: white;
-  padding: 15px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-form button:hover {
-  background: #1558b0;
-}
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <p>&copy; 2026 Tolimi Enterprise Ltd. All rights reserved.</p>
+  </div>
+</footer>
