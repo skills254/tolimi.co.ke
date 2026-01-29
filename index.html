@@ -1,27 +1,108 @@
-<!-- HEADER -->
-<header class="header">
-  <div class="container header-container">
-    <!-- Logo -->
-    <a href="#hero" class="logo">
-      <img src="logo.png" alt="Tolimi Enterprise Logo" class="logo-img">
-    </a>
+/* ALTERNATING SECTIONS */
+.section-light {
+  background: #f7f9fc; /* light grey/blue for contrast */
+  color: #1a1a1a;
+}
 
-    <!-- Navigation -->
-    <nav class="nav">
-      <ul class="nav-links">
-        <li><a href="#about">Who We Are</a></li>
-        <li><a href="#whatwedo">What We Do</a></li>
-        <li><a href="#whatwethink">What We Think</a></li>
-        <li><a href="#careers">Careers</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+/* DARK SECTIONS (already added) */
+.section-dark {
+  background: #0d1f3c; /* navy */
+  color: white;
+}
 
-      <!-- Hamburger Menu for Mobile -->
-      <div class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </nav>
-  </div>
-</header>
+.section-darker {
+  background: #1a2a4f; /* slightly lighter navy */
+  color: white;
+}
+
+/* CARDS */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+  flex: 1 1 250px;
+  max-width: 300px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* CARDS IN DARK SECTIONS */
+.section-dark .card,
+.section-darker .card {
+  background: #2a3b6c;
+  color: white;
+}
+
+.section-dark .card h3,
+.section-darker .card h3 {
+  color: #ff8c00; /* accent heading */
+}
+
+.section-dark .card p,
+.section-darker .card p {
+  color: #ffffff;
+}
+
+.card-img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+/* HERO BUTTONS */
+.hero .btn,
+.section-dark .btn,
+.section-darker .btn,
+.section-light .btn {
+  background: #ff8c00;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.hero .btn:hover,
+.section-dark .btn:hover,
+.section-darker .btn:hover,
+.section-light .btn:hover {
+  background: #ffa733;
+}
+
+/* CONTACT FORM */
+form input, form textarea {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+form button {
+  background: #1a73e8;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+form button:hover {
+  background: #1558b0;
+}
